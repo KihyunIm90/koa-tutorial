@@ -12,7 +12,6 @@ const getNowDateTimeString = () => {
 
 exports.getUser = (id) => {
     let query = `select * from koa_tutorial where id=${id}`;
-    console.log(query);
     if (id == undefined || id == null) {
         query = `select * from koa_tutorial`;
     }
